@@ -92,7 +92,7 @@ const LeftSide = () => {
               <i className="bx bxs-zap"></i>
               <p>My Day</p>
             </div>
-            {totalAllTask > 0 && (
+            {totalTodayTask > 0 && (
               <div className={styles.sidebar__fav__wrapper__item__amount}>
                 <p>{totalTodayTask}</p>
               </div>
