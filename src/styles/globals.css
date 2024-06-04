@@ -3,7 +3,11 @@
   --text-color: #000000;
   --bg-sidebar: #faf9f9;
   --bg-profile: #faf9f9;
+  --blue-primary: #2b41be;
+  --blue-secondary: #dedfff;
   --icon-color: #2b41be;
+  --gray-secondary: #e3e3e3;
+  --border-color: #e3e3e3;
 }
 
 * {
@@ -26,4 +30,5 @@ body {
   --text-color: rgb(227, 227, 227);
   --bg-sidebar: #374151;
   --bg-profile: #374151;
+  --border-color: #374151;
 }

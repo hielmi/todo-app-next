@@ -1,6 +1,7 @@
 .sidebar {
   padding: 40px 20px;
   flex-grow: 1;
+  width: 350px;
   max-width: 350px;
   background-color: var(--bg-sidebar);
 
@@ -43,6 +44,8 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
+        text-decoration: none;
+        color: var(--font-color);
 
         &__body {
           display: flex;
@@ -68,5 +71,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
   }
 }

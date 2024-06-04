@@ -1,4 +1,43 @@
 .container {
+  position: relative;
   display: flex;
   height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 40px 30px;
+  background-color: var(--background-color);
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1.5px var(--border-color);
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: var(--background-color, 0.8);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 20px 20px;
+  }
 }
